@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PeT-8i-e2h">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="fontawesome-webfont.ttf">
+            <string>FontAwesome</string>
+            <string>FontAwesome</string>
+            <string>FontAwesome</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="54y-Bg-YFb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PeT-8i-e2h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="2LM-f4-Kv6">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BsS-ps-Swb" kind="relationship" relationship="viewControllers" id="nxN-uV-dJa"/>
+                        <segue destination="Bvw-Fk-fSo" kind="relationship" relationship="viewControllers" id="kbE-O5-6Q3"/>
+                        <segue destination="QxX-Sw-8FL" kind="relationship" relationship="viewControllers" id="uLW-CH-pN2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yAv-ti-h6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="311"/>
+        </scene>
+        <!--Chreytli Hub-->
+        <scene sceneID="vzH-U0-igW">
+            <objects>
+                <collectionViewController id="2cZ-8r-fFf" customClass="ViewController" customModule="ChreytliV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="rcF-Ur-4Mo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="anO-fg-Ubq">
+                            <size key="itemSize" width="346" height="312"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="IWZ-wP-enF" customClass="CustomCellView" customModule="ChreytliV2" customModuleProvider="target">
+                                <rect key="frame" x="127" y="64" width="346" height="312"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="346" height="312"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sq2-FH-43Z">
+                                            <rect key="frame" x="0.0" y="38" width="346" height="243"/>
+                                        </imageView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Test" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="24l-mp-epW">
+                                            <rect key="frame" x="0.0" y="8" width="346" height="33"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Test" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OSH-5g-lXR">
+                                            <rect key="frame" x="0.0" y="278" width="346" height="34"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="16"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyb-3C-dxs">
+                                            <rect key="frame" x="280" y="279" width="46" height="30"/>
+                                            <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="16"/>
+                                            <state key="normal" title="Score">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="pressedFav:" destination="IWZ-wP-enF" eventType="touchUpInside" id="Xei-NW-T5N"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="DienstText" destination="24l-mp-epW" id="qK4-Sy-so9"/>
+                                    <outlet property="ScoreBtn" destination="Xyb-3C-dxs" id="Dr5-zp-FFI"/>
+                                    <outlet property="SubmitImage" destination="sq2-FH-43Z" id="AiA-jO-qmh"/>
+                                    <outlet property="userText" destination="OSH-5g-lXR" id="MCd-SS-7ri"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="2cZ-8r-fFf" id="Ef3-oA-YhA"/>
+                            <outlet property="delegate" destination="2cZ-8r-fFf" id="3rN-pT-77K"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Chreytli Hub" id="AQQ-R7-W5U">
+                        <barButtonItem key="leftBarButtonItem" systemItem="compose" id="WEf-8t-WZO">
+                            <connections>
+                                <segue destination="w1T-hI-A2e" kind="show" id="Ddb-TJ-9fM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Login" id="tbY-PY-Snw">
+                            <connections>
+                                <segue destination="VIF-n6-zbu" kind="show" id="5wQ-Kt-HXS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionHubView" destination="rcF-Ur-4Mo" id="a5v-K2-Vsi"/>
+                        <outlet property="loginBtn" destination="tbY-PY-Snw" id="srE-Y6-kDl"/>
+                        <outlet property="postSubmitBtn" destination="WEf-8t-WZO" id="NNj-Ca-uJ3"/>
+                        <segue destination="LYc-dt-3e6" kind="show" identifier="showSubmission" id="4cr-3A-ofo"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LRj-sK-GaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2012" y="-533"/>
+        </scene>
+        <!--Chreytli Gaming-->
+        <scene sceneID="Hhm-aW-GVQ">
+            <objects>
+                <viewController id="VtJ-Vw-M7w" customClass="GamingViewController" customModule="ChreytliV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JMU-f1-ihk"/>
+                        <viewControllerLayoutGuide type="bottom" id="89S-ed-EpN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0IL-sj-NjF">
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLo-X5-gAL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mLo-X5-gAL" secondAttribute="trailing" id="8O1-a9-dRT"/>
+                            <constraint firstItem="mLo-X5-gAL" firstAttribute="leading" secondItem="0IL-sj-NjF" secondAttribute="leading" id="LfD-SJ-kat"/>
+                            <constraint firstItem="mLo-X5-gAL" firstAttribute="bottom" secondItem="89S-ed-EpN" secondAttribute="top" id="Pfr-fh-ymf"/>
+                            <constraint firstItem="mLo-X5-gAL" firstAttribute="top" secondItem="JMU-f1-ihk" secondAttribute="bottom" id="yQb-Ef-0em"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Chreytli Gaming" id="55l-Qy-Nrt">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="LQL-5a-cb5">
+                            <connections>
+                                <action selector="pressedRefresh:" destination="VtJ-Vw-M7w" id="vD6-Sc-aoq"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Login" id="kba-6Y-bWZ"/>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="kba-6Y-bWZ" id="5i3-19-JZy"/>
+                        <outlet property="myBrowser" destination="mLo-X5-gAL" id="FYz-iJ-mu9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mae-QR-YZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1987" y="119"/>
+        </scene>
+        <!--Chreytli Event-->
+        <scene sceneID="Yvc-Hs-vQq">
+            <objects>
+                <tableViewController id="1wM-5H-5Kd" customClass="EventViewController" customModule="ChreytliV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="co7-SU-t5j">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="9V9-yi-LDC">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9V9-yi-LDC" id="mnr-Dw-5r3">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1wM-5H-5Kd" id="lnt-Fr-mYJ"/>
+                            <outlet property="delegate" destination="1wM-5H-5Kd" id="oxU-Tj-97T"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Chreytli Event" id="hun-RY-kU1">
+                        <barButtonItem key="leftBarButtonItem" systemItem="compose" id="Q4C-EW-jzk">
+                            <connections>
+                                <segue destination="oHR-zX-fO8" kind="show" id="Mv0-on-bQ8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Login" id="G8W-7r-gWD">
+                            <connections>
+                                <segue destination="VIF-n6-zbu" kind="show" id="Q6H-iG-FCe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="loginBtn" destination="G8W-7r-gWD" id="7C5-Yn-xtL"/>
+                        <outlet property="postSubmitBtn" destination="Q4C-EW-jzk" id="mO8-ZK-Pgn"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="18C-Zk-DKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2023" y="784"/>
+        </scene>
+        <!--Chreytli Submit-->
+        <scene sceneID="G3h-4C-bN4">
+            <objects>
+                <viewController id="w1T-hI-A2e" customClass="SubmitViewController" customModule="ChreytliV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s9I-wb-JJK"/>
+                        <viewControllerLayoutGuide type="bottom" id="6mQ-Ui-ETB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WP1-lT-JNF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="arK-f0-8Np">
+                                <rect key="frame" x="20" y="119" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8KM-gM-MqP">
+                                <rect key="frame" x="76" y="157" width="449" height="29"/>
+                                <segments>
+                                    <segment title="Image"/>
+                                    <segment title="YouTube"/>
+                                    <segment title="Spotify"/>
+                                    <segment title="SoundCloud"/>
+                                    <segment title="Video"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8D-uf-ApF">
+                                <rect key="frame" x="20" y="193" width="560" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedSubmit:" destination="w1T-hI-A2e" eventType="touchUpInside" id="f2f-E3-Clm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="arK-f0-8Np" firstAttribute="leading" secondItem="WP1-lT-JNF" secondAttribute="leadingMargin" id="8N1-aO-dVS"/>
+                            <constraint firstItem="arK-f0-8Np" firstAttribute="trailing" secondItem="WP1-lT-JNF" secondAttribute="trailingMargin" id="VbF-3e-MRw"/>
+                            <constraint firstItem="8KM-gM-MqP" firstAttribute="centerX" secondItem="WP1-lT-JNF" secondAttribute="centerX" id="WMW-Ub-dmk"/>
+                            <constraint firstItem="arK-f0-8Np" firstAttribute="top" secondItem="s9I-wb-JJK" secondAttribute="bottom" constant="55" id="jmR-7c-D7G"/>
+                            <constraint firstItem="J8D-uf-ApF" firstAttribute="leading" secondItem="WP1-lT-JNF" secondAttribute="leadingMargin" id="pOx-ER-fJM"/>
+                            <constraint firstItem="J8D-uf-ApF" firstAttribute="trailing" secondItem="WP1-lT-JNF" secondAttribute="trailingMargin" id="sOU-92-SFW"/>
+                            <constraint firstItem="J8D-uf-ApF" firstAttribute="top" secondItem="8KM-gM-MqP" secondAttribute="bottom" constant="8" id="sTP-GF-KfK"/>
+                            <constraint firstItem="8KM-gM-MqP" firstAttribute="top" secondItem="arK-f0-8Np" secondAttribute="bottom" constant="8" id="zEy-XE-dZi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chreytli Submit" id="9Ks-28-mMR"/>
+                    <connections>
+                        <outlet property="URLtxt" destination="arK-f0-8Np" id="gtk-Zn-2yb"/>
+                        <outlet property="typeCheck" destination="8KM-gM-MqP" id="TjI-7G-zjO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B1q-L4-Fuh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2980" y="-548"/>
+        </scene>
+        <!--Chreytli Login-->
+        <scene sceneID="i2g-66-T7F">
+            <objects>
+                <viewController id="VIF-n6-zbu" customClass="LoginViewController" customModule="ChreytliV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YEg-42-vau"/>
+                        <viewControllerLayoutGuide type="bottom" id="ufN-Yp-NNK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bb0-UM-w2m">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chreytli Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HIA-1f-dkD">
+                                <rect key="frame" x="20" y="127" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Chreytli Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sza-3M-9JX">
+                                <rect key="frame" x="20" y="165" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ny8-zu-qsU">
+                                <rect key="frame" x="20" y="224" width="560" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedLogin:" destination="VIF-n6-zbu" eventType="touchUpInside" id="vYC-OO-7Mc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIQ-Kp-Bdq">
+                                <rect key="frame" x="228" y="266" width="145" height="30"/>
+                                <state key="normal" title="Passwort vergessen?"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ny8-zu-qsU" firstAttribute="top" secondItem="Sza-3M-9JX" secondAttribute="bottom" constant="29" id="7Rk-cr-LI3"/>
+                            <constraint firstItem="HIA-1f-dkD" firstAttribute="top" secondItem="YEg-42-vau" secondAttribute="bottom" constant="63" id="7hJ-fh-pym"/>
+                            <constraint firstItem="jIQ-Kp-Bdq" firstAttribute="top" secondItem="Ny8-zu-qsU" secondAttribute="bottom" constant="8" id="EJ9-3G-5lb"/>
+                            <constraint firstItem="Sza-3M-9JX" firstAttribute="top" secondItem="HIA-1f-dkD" secondAttribute="bottom" constant="8" id="LjZ-Vq-hE2"/>
+                            <constraint firstItem="Sza-3M-9JX" firstAttribute="trailing" secondItem="bb0-UM-w2m" secondAttribute="trailingMargin" id="R8a-4r-1OB"/>
+                            <constraint firstItem="Sza-3M-9JX" firstAttribute="leading" secondItem="bb0-UM-w2m" secondAttribute="leadingMargin" id="WqH-Ns-YQ0"/>
+                            <constraint firstItem="Ny8-zu-qsU" firstAttribute="trailing" secondItem="bb0-UM-w2m" secondAttribute="trailingMargin" id="hVE-ga-udn"/>
+                            <constraint firstItem="HIA-1f-dkD" firstAttribute="trailing" secondItem="bb0-UM-w2m" secondAttribute="trailingMargin" id="k08-DC-4f0"/>
+                            <constraint firstItem="HIA-1f-dkD" firstAttribute="leading" secondItem="bb0-UM-w2m" secondAttribute="leadingMargin" id="ngP-Qy-gvs"/>
+                            <constraint firstItem="jIQ-Kp-Bdq" firstAttribute="centerX" secondItem="bb0-UM-w2m" secondAttribute="centerX" id="nzj-LO-6gZ"/>
+                            <constraint firstItem="Ny8-zu-qsU" firstAttribute="leading" secondItem="bb0-UM-w2m" secondAttribute="leadingMargin" id="zj0-Ra-46p"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chreytli Login" id="IFg-eu-TM3"/>
+                    <connections>
+                        <outlet property="passwordTxt" destination="Sza-3M-9JX" id="8F2-oq-GVu"/>
+                        <outlet property="userNameTxt" destination="HIA-1f-dkD" id="gOH-PV-YdO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m2i-si-hkk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3800" y="119"/>
+        </scene>
+        <!--Submit-->
+        <scene sceneID="YwN-Fd-JuL">
+            <objects>
+                <viewController id="LYc-dt-3e6" customClass="ShowSubmitViewController" customModule="ChreytliV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kKd-Jq-GOc"/>
+                        <viewControllerLayoutGuide type="bottom" id="O4o-gU-L83"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WBz-fI-qfu">
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wH3-Xg-pZK">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wH3-Xg-pZK" secondAttribute="trailing" id="KfQ-fe-TFb"/>
+                            <constraint firstItem="wH3-Xg-pZK" firstAttribute="top" secondItem="kKd-Jq-GOc" secondAttribute="bottom" id="bsC-cf-e8s"/>
+                            <constraint firstItem="wH3-Xg-pZK" firstAttribute="leading" secondItem="WBz-fI-qfu" secondAttribute="leading" id="dVF-w2-PHL"/>
+                            <constraint firstItem="wH3-Xg-pZK" firstAttribute="bottom" secondItem="O4o-gU-L83" secondAttribute="top" id="lE4-cE-UQZ"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Submit" id="V4s-F8-DO4"/>
+                    <connections>
+                        <outlet property="webView" destination="wH3-Xg-pZK" id="E5z-sx-Or8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="erW-cZ-eV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2980" y="-1210"/>
+        </scene>
+        <!--Create Event-->
+        <scene sceneID="XV7-eY-KQk">
+            <objects>
+                <viewController id="oHR-zX-fO8" customClass="CreateEventViewController" customModule="ChreytliV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="anf-il-L6P"/>
+                        <viewControllerLayoutGuide type="bottom" id="qj1-73-6qi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AK7-ml-Bhh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Titel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1wc-eJ-Uhk">
+                                <rect key="frame" x="20" y="114" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Beschreibung" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nRn-qO-nQH">
+                                <rect key="frame" x="20" y="152" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="End Datum" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPi-bm-SmV">
+                                <rect key="frame" x="487.5" y="190" width="92.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="EndDatum:" destination="oHR-zX-fO8" eventType="editingDidEnd" id="srI-zd-cvg"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uey-UN-VgB">
+                                <rect key="frame" x="20" y="244" width="560" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Erstellen">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sart Datum" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="My5-qV-UqY">
+                                <rect key="frame" x="20" y="190" width="449.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="StartDatum:" destination="oHR-zX-fO8" eventType="editingDidEnd" id="NC1-xN-06v"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1wc-eJ-Uhk" firstAttribute="top" secondItem="anf-il-L6P" secondAttribute="bottom" constant="50" id="08A-YL-Ken"/>
+                            <constraint firstItem="pPi-bm-SmV" firstAttribute="leading" secondItem="My5-qV-UqY" secondAttribute="trailing" constant="18" id="Aa8-db-FE1"/>
+                            <constraint firstItem="pPi-bm-SmV" firstAttribute="trailing" secondItem="AK7-ml-Bhh" secondAttribute="trailingMargin" id="Bbe-sh-6hH"/>
+                            <constraint firstItem="pPi-bm-SmV" firstAttribute="leading" secondItem="My5-qV-UqY" secondAttribute="trailing" constant="18" id="Euy-Kf-L6j"/>
+                            <constraint firstItem="1wc-eJ-Uhk" firstAttribute="trailing" secondItem="AK7-ml-Bhh" secondAttribute="trailingMargin" id="GAS-wC-ZOM"/>
+                            <constraint firstItem="1wc-eJ-Uhk" firstAttribute="leading" secondItem="AK7-ml-Bhh" secondAttribute="leadingMargin" id="N74-Wx-Ny0"/>
+                            <constraint firstItem="pPi-bm-SmV" firstAttribute="top" secondItem="nRn-qO-nQH" secondAttribute="bottom" constant="8" id="NQt-xz-8DG"/>
+                            <constraint firstItem="nRn-qO-nQH" firstAttribute="leading" secondItem="AK7-ml-Bhh" secondAttribute="leadingMargin" id="Pkv-r9-Lv7"/>
+                            <constraint firstItem="nRn-qO-nQH" firstAttribute="top" secondItem="1wc-eJ-Uhk" secondAttribute="bottom" constant="8" id="kFR-DS-cAj"/>
+                            <constraint firstItem="nRn-qO-nQH" firstAttribute="trailing" secondItem="AK7-ml-Bhh" secondAttribute="trailingMargin" id="n6K-L4-5FS"/>
+                            <constraint firstItem="My5-qV-UqY" firstAttribute="leading" secondItem="AK7-ml-Bhh" secondAttribute="leadingMargin" id="sf1-9S-e4c"/>
+                            <constraint firstItem="Uey-UN-VgB" firstAttribute="trailing" secondItem="AK7-ml-Bhh" secondAttribute="trailingMargin" id="u5d-Fx-Nca"/>
+                            <constraint firstItem="Uey-UN-VgB" firstAttribute="top" secondItem="pPi-bm-SmV" secondAttribute="bottom" constant="24" id="uB6-RC-r0Y"/>
+                            <constraint firstItem="Uey-UN-VgB" firstAttribute="leading" secondItem="AK7-ml-Bhh" secondAttribute="leadingMargin" id="uo8-xi-YV0"/>
+                            <constraint firstItem="My5-qV-UqY" firstAttribute="top" secondItem="nRn-qO-nQH" secondAttribute="bottom" constant="8" id="z0Z-Cg-k1D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create Event" id="y1T-fj-b2d"/>
+                    <connections>
+                        <outlet property="eDateTest" destination="pPi-bm-SmV" id="Dev-mO-p18"/>
+                        <outlet property="sDateText" destination="My5-qV-UqY" id="1ka-V0-0zK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KpI-4Q-jdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2988" y="784"/>
+        </scene>
+        <!--Hub-->
+        <scene sceneID="S1i-ho-oxr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BsS-ps-Swb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Hub" image="Hub" id="y4d-c7-REy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jai-yr-wiU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2cZ-8r-fFf" kind="relationship" relationship="rootViewController" id="eBy-iR-vrN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vP4-O5-UZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="-548"/>
+        </scene>
+        <!--Event-->
+        <scene sceneID="CbK-gw-TZI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QxX-Sw-8FL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Event" image="Event" id="qwu-MX-oiO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hE0-L5-JtL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1wM-5H-5Kd" kind="relationship" relationship="rootViewController" id="Oxv-ze-sTY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gFy-LD-7jN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="784"/>
+        </scene>
+        <!--Gaming-->
+        <scene sceneID="uuZ-tK-GLp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bvw-Fk-fSo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Gaming" image="Gaming" id="bhi-Jf-MSX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="epO-Ds-Nhw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VtJ-Vw-M7w" kind="relationship" relationship="rootViewController" id="gDB-kF-iX9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hjL-iZ-3jT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1175" y="119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Event" width="34" height="34"/>
+        <image name="Gaming" width="34" height="34"/>
+        <image name="Hub" width="34" height="34"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="5wQ-Kt-HXS"/>
+    </inferredMetricsTieBreakers>
+</document>
